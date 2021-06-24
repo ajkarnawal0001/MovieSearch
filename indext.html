@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input-field{
+    background: linear-gradient(145deg, #227eb3, #b58022);
+    text-align: center;
+    margin: 20px;
+}
+.input-field > input{
+    box-shadow: 5px 5px 23px #7b5717, -5px -5px 23px #ffc535;
+    height: 30px;
+    width: 50vh;
+    margin: 10px;
+}
+.input-field > button{
+    background-color: rgb(146, 212, 250);
+    font-size: 30px;
+    /* margin: 29px; */
+    font-weight: 600;
+}
+#cards{
+    justify-content: center;
+    text-align: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border: 10px solid black;
+}
+.card{
+    border: 5px solid rgb(93, 100, 32);
+}
+.card > button{
+    background-color: rgb(136, 180, 16);
+    font-size: 30px;
+    margin: 20px;
+    font-weight: 600;
+}
+.card > h3 {
+    font-size: 40px;
+}
+.card > h4 {
+    font-size: 35px;
+}
+.card > p {
+    font-size: 25px;
+}
+#rateShow{
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="input-field">
+    <input type="text" required placeholder="Enter a Movie" id="name">
+    <button onclick="getMovieReq()">Search</button>
+    </div>
+
+    <div id="cards">
+    </div>
+    <div id="rateShow"></div>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
